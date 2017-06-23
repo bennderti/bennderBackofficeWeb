@@ -1,0 +1,37 @@
+<section class="login-info">
+    <div class="col-xs-6 col-xs-offset-3">
+        <div class="row main">
+            <div class="form-header">
+                <div class="center-block">
+                
+                    <div class="logo">
+                        <img src="../assets/img/logo.png">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <form name="form" (ngSubmit)="login()" #f="ngForm" novalidate>
+                    <div class="input-group ">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></span>
+                        <input id="username" type="text" class="form-control" [(ngModel)]="model.username" name="username" placeholder="Enter your Email">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                        <input id="password" type="password" class="form-control" [(ngModel)]="model.password" name="password" placeholder="Enter your Password">
+                    </div>
+                    
+                    <div class="checkbox">
+                        <label class="remember">
+                            <input name="remember" type="checkbox" > Remember Me
+                        </label>
+                    </div>
+                    
+                    <div class="form-group ">
+                        <button  class="btn btn-danger btn-lg btn-block login-button">login</button>
+                    </div>
+                </form>      
+            </div>
+        </div>
+    </div>
+</section>
